@@ -14,7 +14,7 @@ export const environment = {
   redirect_uri: 'http://sso.core.admin.xxx98qn.xyz/auth-callback',
   post_logout_redirect_uri: 'http://sso.core.admin.xxx98qn.xyz',
   scope: 'sso.api openid profile',
-  silent_redirect_uri: 'https://sso.core.admin.xxx98qn.xyz/silent-renew.html',
+  silent_redirect_uri: 'http://sso.core.admin.xxx98qn.xyz/silent-renew.html',
   response_type: 'code',
   filterProtocolClaims: true,
   loadUserInfo: true,
