@@ -13,7 +13,7 @@ export const environment = {
   client_id: 'angular_admin_dashboard',
   redirect_uri: 'https://sso.core.admin.xxx98qn.xyz/auth-callback',
   post_logout_redirect_uri: 'https://sso.core.admin.xxx98qn.xyz',
-  scope: 'AUTH_SERVER ADMIN_API USER_API openid profile',
+  scope: 'SSO_SERVER openid profile',
   silent_redirect_uri: 'https://sso.core.admin.xxx98qn.xyz/silent-renew.html',
   response_type: 'code',
   filterProtocolClaims: true,
