@@ -10,10 +10,10 @@ export const environment = {
   profile_app_url: 'https://sso.core.client.xxx98qn.xyz',
 
   authority: 'https://sso.core.api.xxx98qn.xyz',
-  client_id: 'angular_admin_dashboard',
+  client_id: 'single.sign.on.admin',
   redirect_uri: 'http://sso.core.admin.xxx98qn.xyz/auth-callback',
   post_logout_redirect_uri: 'http://sso.core.admin.xxx98qn.xyz',
-  scope: 'SSO_SERVER openid profile',
+  scope: 'sso.api openid profile',
   silent_redirect_uri: 'https://sso.core.admin.xxx98qn.xyz/silent-renew.html',
   response_type: 'code',
   filterProtocolClaims: true,
