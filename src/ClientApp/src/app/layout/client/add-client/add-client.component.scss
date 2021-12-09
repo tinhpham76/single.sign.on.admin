@@ -1,11 +1,25 @@
 .content-heading{
   margin: 0px 0px 20px 0px;
+  span {
+    color: #000;
+    font-weight: 600;
+  }
+  p {
+    font-size: 14px;
+    color: #8e8e8e;
+  }
 }
-button{
-  margin: 0px 20px 10px 0px;
-}   
-.card{
-  height: auto;
-  width: auto;
-  margin: 24px 0px 0px 0px;
+.tag-block {
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  cursor: pointer;
+  span {
+    font-size: 14px;
+  }
 }
