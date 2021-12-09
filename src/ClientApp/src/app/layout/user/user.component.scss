@@ -1,6 +1,19 @@
 .content-heading{
-    margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  span {
+    color: #000;
+    font-weight: 600;
   }
-button{
-    margin: 0px 20px 10px 0px;
-}  
+  p {
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+}
+.table-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.th-title {
+  font-size: 16px;
+}

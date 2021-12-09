@@ -1,13 +1,12 @@
 <!--Header-->
 <div class="content-heading">
-  <div>
-    👨‍👩‍👧‍👦 Users
-    <br>
-    <small><b> A user is a person or robot that can access resources and clients..</b></small>
-  </div>
+  <span>👨‍👩‍👧‍👦 Users</span>
+  <p> A user is a person or robot that can access resources and clients.</p>
 </div>
-<button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='add'><i nz-icon
-    nzType="user-add"></i>Create new user</button>
+<button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='add'>
+  <i nz-icon nzType="plus-circle" nzTheme="fill"></i>
+  Create new user
+</button>
 <br><br>
 <div nz-row>
   <div nz-col nzSpan="6">
@@ -26,12 +25,12 @@
     [nzData]="items" [nzTotal]="totalRecords" [nzFrontPagination]="false" (nzQueryParams)="onQueryParamsChange($event)">
     <thead>
       <tr>
-        <th>Index</th>
-        <th>Avatar</th>
-        <th>User Name</th>
-        <th>Full Name</th>
-        <th>Email</th>
-        <th>Action</th>
+        <th nzWidth="45px"></th>
+        <th class="th-title">Avatar</th>
+        <th class="th-title">User Name</th>
+        <th class="th-title">Full Name</th>
+        <th class="th-title">Email</th>
+        <th class="th-title" nzWidth="20%">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -45,13 +44,12 @@
         <td>{{ user.email }}</td>
         <td>
           <div class="table-action">
-            <a style="text-decoration:underline; margin-right: 5px;" [routerLink]="[user.id,'edit']">
-              Edit
-            </a>
-            <a style="text-decoration:underline" href='javascript:void(0)'
-              (click)='showDeleteConfirm(user.fullName, user.id)'>
-              Delete
-            </a>
+            <button nz-button nzType="primary" [routerLink]="[user.id,'edit']">
+               Edit<i nz-icon nzType="edit" nzTheme="fill"></i>
+            </button>
+            <button  nz-button nzType="primary" nzDanger (click)='showDeleteConfirm(user.fullName, user.id)'>
+                Delete<i nz-icon nzType="delete" nzTheme="fill"></i>
+            </button>
           </div>
         </td>
       </tr>

@@ -1,15 +1,14 @@
 <!--Header-->
 <div class="content-heading">
-    <div>
-        🔖 Identity Resources
-        <br>
-        <small><b> Identity resources are data like user ID, name, or email address of a user. An identity resource has
-                a unique name, and you can assign arbitrary claim types to it. These claims will then be included in the
-                identity token for the user..</b></small>
-    </div>
+    <span>🔖 Identity Resources</span>
+    <p> Identity resources are data like user ID, name, or email address of a user. An identity resource has
+        a unique name, and you can assign arbitrary claim types to it. These claims will then be included in the
+        identity token for the user..</p>
 </div>
-<button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='add'><i nz-icon
-        nzType="file-add"></i>Add new resource</button>
+<button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='add'>
+    <i nz-icon nzType="plus-circle" nzTheme="fill"></i>
+    Add new resource
+</button>
 <br><br>
 <div nz-row>
     <div nz-col nzSpan="6">
@@ -29,10 +28,10 @@
         (nzQueryParams)="onQueryParamsChange($event)">
         <thead>
             <tr>
-                <th>Index</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Action</th>
+                <th nzWidth="45px"></th>
+                <th class="th-title">Name</th>
+                <th class="th-title">Description</th>
+                <th class="th-title" nzWidth="20%">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -42,16 +41,12 @@
                 <td>{{ identity.description }}</td>
                 <td>
                     <div class="table-action">
-                        <div class="table-action">
-                            <a style="text-decoration:underline; margin-right: 5px;"
-                                [routerLink]="[identity.name,'edit']">
-                                Edit
-                            </a>
-                            <a style="text-decoration:underline" href='javascript:void(0)'
-                                (click)='showDeleteConfirm(identity.name)'>
-                                Delete
-                            </a>
-                        </div>
+                        <button nz-button nzType="primary" [routerLink]="[identity.name,'edit']">
+                           Edit<i nz-icon nzType="edit" nzTheme="fill"></i>
+                        </button>
+                        <button  nz-button nzType="primary" nzDanger (click)='showDeleteConfirm(identity.name)'>
+                            Delete<i nz-icon nzType="delete" nzTheme="fill"></i>
+                        </button>
                     </div>
                 </td>
             </tr>

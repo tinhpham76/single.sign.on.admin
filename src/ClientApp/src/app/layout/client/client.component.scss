@@ -1,23 +1,19 @@
 .content-heading{
-    margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  span {
+    color: #000;
+    font-weight: 600;
   }
-button{
-    margin: 0px 20px 10px 0px;
-}  
-.search-box {
-  padding: 8px;
+  p {
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+}
+.table-action {
+display: flex;
+justify-content: space-between;
 }
 
-.search-box input {
-  width: 188px;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.search-box button {
-  width: 90px;
-}
-
-.search-button {
-  margin-right: 8px;
+.th-title {
+font-size: 16px;
 }

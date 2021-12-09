@@ -1,14 +1,12 @@
 <!--Header-->
 <div class="content-heading">
-  <div>
-    🔑 Permissions
-    <br>
-    <small><b>Represents a role in the identity system</b></small>
-  </div>
+  <span>🔑 Permissions</span>
+  <p> Represents a role in the identity system.</p>
 </div>
-<button nz-button nzType="primary" nzButtonSize="large" nzShape="round" (click)="open()"><i nz-icon
-    nzType="file-add"></i>Create new
-  role</button>
+<button nz-button nzType="primary" nzButtonSize="large" nzShape="round" (click)="open()">
+  <i nz-icon nzType="plus-circle" nzTheme="fill"></i>
+  Create new role
+</button>
 <br><br>
 <div nz-row>
   <div nz-col nzSpan="6">
@@ -27,12 +25,12 @@
     [nzData]="items" [nzTotal]="totalRecords" [nzFrontPagination]="false" (nzQueryParams)="onQueryParamsChange($event)">
     <thead>
       <tr>
-        <th>Index</th>
-        <th>Id</th>
-        <th>Name</th>
-        <th>User Permissions</th>
-        <th>Client Permissions</th>
-        <th>Delete</th>
+        <th nzWidth="45px"></th>
+        <th class="th-title">Id</th>
+        <th class="th-title">Name</th>
+        <th class="th-title">User Permissions</th>
+        <th class="th-title">Client Permissions</th>
+        <th class="th-title">Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -42,23 +40,23 @@
         <td>{{ role.name }}</td>
         <td>
           <div class="table-action">
-            <a style="text-decoration:underline; margin-right: 5px;" [routerLink]="[role.id,'editPermissons']">
-              Edit
-            </a>
+            <button nz-button nzType="primary" [routerLink]="[role.id,'editPermissons']">
+              Edit<i nz-icon nzType="edit" nzTheme="fill"></i>
+           </button>
           </div>
         </td>
         <td>
           <div class="table-action">
-            <a style="text-decoration:underline; margin-right: 5px;" [routerLink]="[role.id,'clientPermissons']">
-              Edit
-            </a>
+            <button nz-button nzType="primary" [routerLink]="[role.id,'clientPermissons']">
+              Edit<i nz-icon nzType="edit" nzTheme="fill"></i>
+           </button>
           </div>
         </td>
         <td>
           <div class="table-action">
-            <a style="text-decoration:underline" href='javascript:void(0)' (click)='showConfirm(role.id)'>
-              Delete
-            </a>
+            <button  nz-button nzType="primary" nzDanger (click)='showConfirm(role.id)'>
+              Delete<i nz-icon nzType="delete" nzTheme="fill"></i>
+            </button>
           </div>
         </td>
       </tr>
