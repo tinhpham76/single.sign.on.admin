@@ -1,11 +1,7 @@
 <!--Header-->
 <div class="content-heading">
-  <div>
-    💻 Clients
-    <br>
-    <small><b> The Client class represents an OpenID Connect or OAuth 2.0 client - e.g. a native application, a web
-        application or a JS-based application..</b></small>
-  </div>
+  <span>💻 Clients</span>
+  <p> The Client class represents an OpenID Connect or OAuth 2.0 client - e.g. a native application, a web application or a JS-based application..</p>
 </div>
 <button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='/clients'><i nz-icon
     nzType="rollback"></i>Go back</button>
@@ -55,13 +51,13 @@
   </form>
   <nz-form-item>
     <nz-form-label [nzSm]="6" [nzXs]="24">Client Type</nz-form-label>
-    <div class="ng-tns-c217-4 ant-form-item-control ant-col ant-col-xs-24 ant-col-sm-14 ng-star-inserted">
-      <nz-tag *ngFor="let tag of tags" style="margin-top: 24px;" class="border" nzMode="checkable"
+    <div class="tag-block">
+      <nz-tag *ngFor="let tag of tags" style="margin-top: 8px;" class="border" nzMode="checkable"
         [nzChecked]="tag.check" (nzCheckedChange)="checkChange($event,tag.description, tag.clientType)">
-        <div class="card-body text-center">
-          <div class="text-lg m-0">{{tag.icon}}</div>
-          <p>{{tag.description}}</p>
-          <small>{{tag.type}}</small>
+        <div class="item">
+          <span>{{tag.icon}}{{tag.description}}
+            - <small>{{tag.type}}</small>
+          </span>
         </div>
       </nz-tag>
     </div>
