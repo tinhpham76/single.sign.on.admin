@@ -1,36 +1,33 @@
 img {
   height: 50px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 10px 10px 10px 30px;
 }
 
 nz-header {
   background: #fff;
-  padding: 0;
+  padding: 0px 14px;
   height: auto;
-  overflow: auto;
 }
 
 nz-content {
-  margin: 0 16px;
-}
-
-nz-breadcrumb {
-  margin: 16px 0;
+  padding: 20px;
 }
 
 .inner-content {
   padding: 24px;
   background: #fff;
-  min-height: 500px;
 }
 
 nz-footer {
   text-align: center;
+  padding: 10px 0px;
 }
-.item{
-  overflow: auto;
-  position: fixed;
-  height: calc(100% - 55px);
-  width: 200px;
+
+.layout-wrapper {
+  height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
