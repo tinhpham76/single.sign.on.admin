@@ -11,7 +11,7 @@
 <div nz-row>
     <div nz-col nzSpan="6">
         <nz-input-group [nzSuffix]="suffixIconSearch">
-            <input placeholder="Search client with id, name,..." nz-input type="text" [(ngModel)]="search"
+            <input placeholder="Search client with id, name,..." nz-input type="text" [(ngModel)]="searchValue"
                 (keydown.enter)="handleInputConfirm()" />
         </nz-input-group>
         <ng-template #suffixIconSearch>
