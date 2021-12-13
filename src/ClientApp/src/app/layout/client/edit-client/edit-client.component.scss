@@ -1,19 +1,15 @@
 .content-heading{
-    margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  span {
+    color: #000;
+    font-weight: 600;
   }
-button{
-    margin: 0px 20px 10px 0px;
-}  
-[nz-form] {
-  max-width: 900px;
-}
-.register-are {
-  margin-bottom: 8px;
+  p {
+    font-size: 14px;
+    color: #8e8e8e;
+  }
 }
 
-button {
-  margin-left: 8px;
-}
 .editable-tag {
   background: rgb(255, 255, 255);
   border-style: dashed;
@@ -28,7 +24,7 @@ button {
 }
 
 .form-block {
-  width: 45%;
+  width: 60%;
   padding: 40px 30px;
   border: 1px solid #eceff2;
   border-radius: 8px;
@@ -42,4 +38,9 @@ button {
       }
     }
   }
+}
+
+.tag-wrapper {
+  border-bottom: 1px solid #d4dadf;
+  margin-bottom: 6px;
 }

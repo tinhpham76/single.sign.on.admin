@@ -1,6 +1,32 @@
 .content-heading{
-    margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  span {
+    color: #000;
+    font-weight: 600;
   }
-button{
-    margin: 0px 20px 10px 0px;
-}  
+  p {
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form-block {
+  width: 60%;
+  padding: 40px 30px;
+  border: 1px solid #eceff2;
+  border-radius: 8px;
+  .form-input {
+    display: flex;
+    align-items: center;
+    label {
+      width: 200px;
+      span {
+        color: var(--red);
+      }
+    }
+  }
+}

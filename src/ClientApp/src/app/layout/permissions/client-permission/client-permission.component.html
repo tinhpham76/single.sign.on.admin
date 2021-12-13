@@ -1,11 +1,8 @@
 <!--Header-->
 <div class="content-heading">
-    <div>
-      🔑 Permissions
-      <br>
-      <small><b>Represents a role in the identity system</b></small>
-    </div>
-  </div>
+  <span>🔑 Permissions</span>
+  <p> Represents a role in the identity system.</p>
+</div>
   <button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='/permissions'><i nz-icon
       nzType="rollback"></i>Go back</button>
   <br><br>
@@ -42,9 +39,11 @@
             <label nz-checkbox [(ngModel)]="data.enable"></label>
           </td>
           <td>
-            <a style="text-decoration:underline" href='javascript:void(0)' (click)='editPermission(data)'>
-              Save
-            </a>
+            <div class="table-action">
+              <button nz-button nzType="primary" (click)='editPermission(data)'>
+                Save<i nz-icon nzType="save" nzTheme="fill"></i>
+             </button>
+            </div>
           </td>
         </tr>
       </tbody>

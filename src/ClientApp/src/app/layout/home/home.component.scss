@@ -1,9 +1,17 @@
-[nz-button] {
-    margin-right: 8px;
-    margin-bottom: 12px;
+.home-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding: 10px 30px;
+    .img-intro{
+      width: 110px;
+      height: 110px;
+    }
+    .img-angular{
+      border-radius: 50%;
+      border: 4px solid #e5e8ea;
+      padding: 6px;
+    }
   }
-  .img-intro{
-    width: 150px;
-     height: 150px; 
-    margin: 10px;
-  }
+}

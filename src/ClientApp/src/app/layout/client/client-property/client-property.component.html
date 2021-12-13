@@ -1,11 +1,7 @@
 <!--Header-->
 <div class="content-heading">
-    <div>
-        💻 Clients
-        <br>
-        <small><b> The Client class represents an OpenID Connect or OAuth 2.0 client - e.g. a native application, a web
-                application or a JS-based application..</b></small>
-    </div>
+    <span>💻 Clients</span>
+    <p> The Client class represents an OpenID Connect or OAuth 2.0 client - e.g. a native application, a web application or a JS-based application..</p>
 </div>
 <button nz-button nzType="primary" nzButtonSize="large" nzShape="round" routerLink='../edit'><i nz-icon
         nzType="rollback"></i>Go back</button>
@@ -38,11 +34,11 @@
 </nz-spin>
 <br>
 <hr>
-<div>
+<div class="form-wrapper">
     <!--Add client property-->
-    <form nz-form [formGroup]="propertyForm" (ngSubmit)="submitFormClientProperty(propertyForm.value)">
-        <nz-form-item>
-            <nz-form-label [nzSm]=" 6" [nzXs]="24" nzRequired>Property Key</nz-form-label>
+    <form nz-form [formGroup]="propertyForm" (ngSubmit)="submitFormClientProperty(propertyForm.value)" class="form-block">
+        <nz-form-item class="form-input">
+            <label for="">Property Key<span>*</span></label>
             <nz-form-control [nzSm]="14" [nzXs]="24" nzHasFeedback nzValidatingTip="Validating..."
                 [nzErrorTip]="keyErrorTpl">
                 <input nz-input formControlName="key" placeholder="Property key" />
@@ -53,8 +49,8 @@
                 </ng-template>
             </nz-form-control>
         </nz-form-item>
-        <nz-form-item>
-            <nz-form-label [nzSm]=" 6" [nzXs]="24" nzRequired>Property Value</nz-form-label>
+        <nz-form-item class="form-input">
+            <label for="">Property Value<span>*</span></label>
             <nz-form-control [nzSm]="14" [nzXs]="24" nzHasFeedback nzValidatingTip="Validating..."
                 [nzErrorTip]="valueErrorTpl">
                 <input nz-input formControlName="value" placeholder="Property value" />
@@ -65,7 +61,7 @@
                 </ng-template>
             </nz-form-control>
         </nz-form-item>
-        <nz-form-item nz-row class="register-area">
+        <nz-form-item>
             <nz-form-control [nzSpan]="14" [nzOffset]="6">
                 <button nz-button nzType="primary" [disabled]="!propertyForm.valid">Create</button>
             </nz-form-control>
