@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Single.Sign.On.Admin
+namespace single.sign.on.dashboard
 {
     public class Program
     {

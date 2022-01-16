@@ -24,17 +24,17 @@ stages:
       displayName: Login to ACR
       inputs:
         command: login
-        containerRegistry: single.sign.on.admin
+        containerRegistry: single.sign.on.dashboard
     - task: Docker@2
       displayName: Login to Docker Hub
       inputs:
         command: login
-        containerRegistry: single.sign.on.admin
+        containerRegistry: single.sign.on.dashboard
     - task: Docker@2
       displayName: Build and Push
       inputs:
         command: buildAndPush
-        repository: tinhpv98/single.sign.on.admin
+        repository: tinhpv98/single.sign.on.dashboard
         dockerfile: '$(Build.SourcesDirectory)/dockerfile'
         tags: |
           $(Build.SourceBranchName)

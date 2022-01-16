@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7E5C0AD4-87D2-469B-A8C3-42E9621DA6CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Single.Sign.On.Admin", "src\Single.Sign.On.Admin.csproj", "{DD06E986-ACFB-42C8-AB57-A69E5CB80726}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "single.sign.on.dashboard", "src\single.sign.on.dashboard.csproj", "{DD06E986-ACFB-42C8-AB57-A69E5CB80726}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

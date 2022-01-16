@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Single.Sign.On.Admin.Controllers
+namespace single.sign.on.dashboard.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -6,10 +6,10 @@ WORKDIR /app
 
 COPY ["./src/", "src/"]
 
-RUN dotnet restore "src/Single.Sign.On.Admin.csproj"
+RUN dotnet restore "src/single.sign.on.dashboard.csproj"
 
 WORKDIR "/app/src"
-RUN dotnet build "Single.Sign.On.Admin.csproj" -c Release -o /app/build
+RUN dotnet build "single.sign.on.dashboard.csproj" -c Release -o /app/build
 RUN apt-get update && \
     apt-get install -y wget && \
     apt-get install -y gnupg2 && \
@@ -17,9 +17,9 @@ RUN apt-get update && \
     apt-get install -y build-essential nodejs
 
 FROM build AS publish
-RUN dotnet publish "Single.Sign.On.Admin.csproj" -c Release -o /app/publish
+RUN dotnet publish "single.sign.on.dashboard.csproj" -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Single.Sign.On.Admin.dll"]
+ENTRYPOINT ["dotnet", "single.sign.on.dashboard.dll"]

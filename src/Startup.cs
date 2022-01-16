@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Single.Sign.On.Admin
+namespace single.sign.on.dashboard
 {
     public class Startup
     {

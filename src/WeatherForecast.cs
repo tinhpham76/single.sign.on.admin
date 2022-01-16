@@ -1,6 +1,6 @@
 using System;
 
-namespace Single.Sign.On.Admin
+namespace single.sign.on.dashboard
 {
     public class WeatherForecast
     {

@@ -11,7 +11,7 @@ export const environment = {
   profile_app_url: 'http://localhost:4300',
 
   authority: 'https://single.sign.on.api.xxx98qn.xyz',
-  client_id: 'single.sign.on.admin.local',
+  client_id: 'single.sign.on.dashboard.local',
   redirect_uri: 'http://localhost:4200/auth-callback',
   post_logout_redirect_uri: 'http://localhost:4200/',
   response_type: 'code',

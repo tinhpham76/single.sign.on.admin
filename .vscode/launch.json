@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/bin/Debug/net5.0/Single.Sign.On.Admin.dll",
+            "program": "${workspaceFolder}/src/bin/Debug/net5.0/single.sign.on.dashboard.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src",
             "stopAtEntry": false,

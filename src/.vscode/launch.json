@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net5.0/Single.Sign.On.Admin.dll",
+            "program": "${workspaceFolder}/bin/Debug/net5.0/single.sign.on.dashboard.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

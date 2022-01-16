@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Single.Sign.On.Admin": {
+    "single.sign.on.dashboard": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:4200",
