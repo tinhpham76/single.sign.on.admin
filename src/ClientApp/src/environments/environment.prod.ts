@@ -5,16 +5,16 @@
 export const environment = {
   production: false,
 
-  api_url: 'https://sso.core.api.xxx98qn.xyz',
+  api_url: 'https://single.sign.on.api.xxx98qn.xyz',
 
   profile_app_url: 'https://sso.core.client.xxx98qn.xyz',
 
-  authority: 'https://sso.core.api.xxx98qn.xyz',
+  authority: 'https://single.sign.on.api.xxx98qn.xyz',
   client_id: 'single.sign.on.admin',
-  redirect_uri: 'http://sso.core.admin.xxx98qn.xyz/auth-callback',
-  post_logout_redirect_uri: 'http://sso.core.admin.xxx98qn.xyz',
+  redirect_uri: 'http://single.sign.on.admin.xxx98qn.xyz/auth-callback',
+  post_logout_redirect_uri: 'http://single.sign.on.admin.xxx98qn.xyz',
   scope: 'sso.api openid profile',
-  silent_redirect_uri: 'http://sso.core.admin.xxx98qn.xyz/silent-renew.html',
+  silent_redirect_uri: 'http://single.sign.on.admin.xxx98qn.xyz/silent-renew.html',
   response_type: 'code',
   filterProtocolClaims: true,
   loadUserInfo: true,

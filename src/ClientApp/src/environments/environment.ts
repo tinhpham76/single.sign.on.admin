@@ -6,11 +6,11 @@ const webUrl = window.location.origin;
 export const environment = {
   production: false,
 
-  api_url: 'https://sso.core.api.xxx98qn.xyz',
+  api_url: 'https://single.sign.on.api.xxx98qn.xyz',
 
   profile_app_url: 'http://localhost:4300',
 
-  authority: 'https://sso.core.api.xxx98qn.xyz',
+  authority: 'https://single.sign.on.api.xxx98qn.xyz',
   client_id: 'single.sign.on.admin.local',
   redirect_uri: 'http://localhost:4200/auth-callback',
   post_logout_redirect_uri: 'http://localhost:4200/',
