@@ -7,7 +7,7 @@ export const environment = {
 
   api_url: 'https://single.sign.on.api.xxx98qn.xyz',
 
-  profile_app_url: 'https://sso.core.client.xxx98qn.xyz',
+  profile_app_url: 'https://single.sign.on.user.xxx98qn.xyz',
 
   authority: 'https://single.sign.on.api.xxx98qn.xyz',
   client_id: 'single.sign.on.dashboard',
